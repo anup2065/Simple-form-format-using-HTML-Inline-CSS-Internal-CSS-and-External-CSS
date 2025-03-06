@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>Simple Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: darkkhaki;
+            text-align: center;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        m .hob {
+            background-color: #e0f7fa;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="blue" style="text-decoration: underline;">Form</h1>
+    <form action="html_form_action.asp" method="get" style="background-color: rgb(250, 224, 75); padding: 20px; border-radius: 10px; display: inline-block; 
+               border: 2px solid gray;">
+
+        <div class="one">
+            <label>Name: </label>
+            <input type="text" name="name" placeholder="Enter your name" required class="same"><br>
+
+            <label>Age: </label>
+            <input type="number" name="age" placeholder="Enter your age" required class="same"><br>
+
+            <label>Phone Number: </label>
+            <input type="number" name="phone" placeholder="Enter your phone number" required class="same"><br>
+
+            <label>Address: </label>
+            <input type="text" name="address" placeholder="Enter your address" required class="same">
+        </div>
+        <br>
+
+        <b>Gender:</b><br>
+        <label class="blue">Male: <input type="radio" name="gender"></label><br>
+        <label class="pink">Female: <input type="radio" name="gender"></label>
+        <br><br>
+
+        Email: <input type="email" name="email" placeholder="Enter your email" class="same"><br><br>
+
+        <div class="hob">
+            <b>Hobbies</b><br>
+            Programming: <input type="checkbox"><br>
+            Reading: <input type="checkbox"><br>
+            Writing: <input type="checkbox"><br>
+            Playing Chess: <input type="checkbox"><br>
+            Watching Combat Sports: <input type="checkbox"><br>
+            <i>If you have any other hobbies, write here:</i>
+            <input type="text" name="hobby" placeholder="Hobbies" class="same">
+        </div>
+        <br>
+
+        <label>Country: </label>
+        <select class="same">
+            <option value="">Select Country</option>
+            <option value="Nepal">Nepal</option>
+            <option value="UAE">UAE</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="South Korea">South Korea</option>
+        </select>
+        <br><br>
+
+        Username: <input type="text" name="username" placeholder="Type your username"><br><br>
+
+        <input type="submit" value="Submit" style="background-color: green; color: white;">
+    </form>
+</body>
+
+</html>
